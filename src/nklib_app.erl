@@ -22,7 +22,7 @@
 -module(nklib_app).
 -author('Carlos Gonzalez <carlosj.gf@gmail.com>').
 -behaviour(application).
-
+-compile([{parse_transform, lager_transform}]).
 -export([start/0, start/2, stop/1]).
 
 -define(APP, nklib).
